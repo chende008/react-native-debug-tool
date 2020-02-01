@@ -1,0 +1,24 @@
+{
+  "name": "react-native-debug-tool",
+  "version": "0.0.1",
+  "description": "debug-tool for react-native",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chende008/react-native-fast-app.git"
+  },
+  "keywords": [
+    "debug-tool"
+  ],
+  "author": "chende",
+  "license": "MIT",
+  "dependencies": {
+    "react-native-root-siblings": "3.2.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
