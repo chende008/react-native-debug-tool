@@ -1,3 +1,3 @@
-import DebugManager from './src/lib/DebugManager'
+import DebugManager from './src/DebugManager'
 
 export default DebugManager

@@ -4,7 +4,7 @@ import {ScrollView, Text, TouchableOpacity} from 'react-native'
 
 import {Colors} from '../utils/DebugConst'
 import {Line} from '../utils/Widgets'
-import DebugManager from './DebugManager'
+import DebugManager from '../DebugManager'
 
 export default class SubViewServerUrl extends PureComponent {
 

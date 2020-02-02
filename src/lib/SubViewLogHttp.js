@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 import {Alert, ScrollView, StyleSheet, Text, View} from 'react-native'
 
-import DebugManager from './DebugManager'
+import DebugManager from '../DebugManager'
 import {Colors} from '../utils/DebugConst'
 import {dateFormat, isEmpty, showMsg} from '../utils/DebugUtils'
 

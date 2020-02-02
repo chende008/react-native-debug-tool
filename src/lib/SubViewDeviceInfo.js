@@ -5,7 +5,7 @@ import {ScrollView, StyleSheet, Text} from 'react-native'
 import {Colors} from '../utils/DebugConst'
 import {dateFormat, isAndroid, isEmpty, showMsg} from '../utils/DebugUtils'
 import {DebugData} from '../utils/DebugData'
-import DebugManager from './DebugManager'
+import DebugManager from '../DebugManager'
 
 export default class SubViewDeviceInfo extends Component {
 

@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react'
 
 import {ScrollView, StyleSheet, Text, View} from 'react-native'
 
-import DebugManager from './DebugManager'
+import DebugManager from '../DebugManager'
 import {Colors} from '../utils/DebugConst'
 import {showMsg} from '../utils/DebugUtils'
 
