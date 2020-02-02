@@ -17,27 +17,6 @@ export default class DebugManager {
         DeviceInfo: '',// react-native-device-info 对象
     };
 
-    /**
-     * 此方法在React Native 新版本中不推荐使用 原因是获取不到 response._bodyText 的值（推荐使用httpLogs方法）
-     */
-    static httpAppendLogs(url, params, response) {//Http请求日志（请求结果过大的数据不保存）
-        if (!this.logOn || isEmpty(response._bodyText)) return;
-        costTimeWork(() => {
-            let obj = {
-                url: url,
-                apiName: DebugManager.getApiName(url),
-                method: params.method,
-                headers: JSON.stringify(params.headers),
-                body: JSON.stringify(params.body),
-                result: response._bodyText.substr(0, 2000),
-                completed: response._bodyText.length < 2000,
-                timeStr: dateFormat(new Date(), 'MM月dd日 hh时mm分ss秒'),
-            };
-            httpRequestLogs.unshift(obj);
-            if (httpRequestLogs.length > 20) httpRequestLogs.splice(10)//若日志个数大于20，则删除前10个
-        })
-    }
-
     static httpLogs(params, response, parseResult) {//Http请求日志（请求结果过大的数据不保存） parseResult->用于临时解析
         if (!this.logOn || isEmpty(response)) return;
         if (isEmpty(response._bodyText) && isEmpty(parseResult)) {
