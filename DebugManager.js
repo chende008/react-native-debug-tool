@@ -1,8 +1,8 @@
 import React from 'react'
 
-import {costTimeWork, dateFormat, isEmpty} from './utils/DebugUtils'
+import {costTimeWork, dateFormat, isEmpty} from './src/utils/DebugUtils'
 import RootSibling from 'react-native-root-siblings'
-import FloatPanelController from './lib/FloatPanelController'
+import FloatPanelController from './src/lib/FloatPanelController'
 
 let httpRequestLogs = [], webViewLoadLogs = [];
 
