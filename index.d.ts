@@ -1,8 +1,8 @@
 interface DebugManager {
 
-    initServerUrlMap(serverUrlMap: object, currentUrl: string, changeCallback: (baseUrl: string) => void): void
+    initServerUrlMap(serverUrlMap: object, currentUrl: string, changeCallback: (baseUrl: string) => void): DebugManager
 
-    initDeviceInfo(deviceInfo: object): void;
+    initDeviceInfo(deviceInfo: object): DebugManager;
 
     appendHttpLogs(params: object, response: object, parseResult: object): void;
 
