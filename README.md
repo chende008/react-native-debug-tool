@@ -18,12 +18,9 @@
  初始化方法：
  
   ```
-  DebugManager.initServerUrlMap(serverUrlMap)
-              .initCurrentUrl(currentUrl)
-              .initDeviceInfo(DeviceInfo)
-              .initChangeCallback((baseUrl) => {
+  DebugManager.initDeviceInfo(DeviceInfo).initServerUrlMap(serverUrlMap, currentUrl, (baseUrl) => {
   
-              }); 
+  });
   
   注：初始化方法为非必需方法，如果项目不需要支持【环境切换】与【设备信息查看】功能，可以不调用此方法
   
