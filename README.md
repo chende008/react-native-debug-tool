@@ -12,13 +12,18 @@
  在项目package.json的 dependencies 节点下引入 
  
  ```jsx
- "react-native-debug-tool": "https://github.com/chende008/react-native-debug-tool.git#master"
+ "react-native-debug-tool": "https://github.com/chende008/react-native-fast-app.git#master"
  ```
 
  初始化方法：
  
   ```
-  DebugManager.init(serverUrlMap, serverUrl, DeviceInfo, (baseUrl) => {}); 
+  DebugManager.initServerUrlMap(serverUrlMap)
+              .initCurrentUrl(currentUrl)
+              .initDeviceInfo(DeviceInfo)
+              .initChangeCallback((baseUrl) => {
+  
+              }); 
   
   注：初始化方法为非必需方法，如果项目不需要支持【环境切换】与【设备信息查看】功能，可以不调用此方法
   
@@ -50,7 +55,8 @@ fetch(url, params).then((response) => {
 <WebView source={{uri: url}}
          onNavigationStateChange={params => {
              DebugManager.webViewAppendLogs(params.url)
-         }}/>
+         }}
+/>
 
 ```
 
@@ -60,6 +66,8 @@ fetch(url, params).then((response) => {
 调试工具开发入口打开方法：
 ```js
 
- DebugManager.showFloat() //在App内需要的地方调用些方法展示工具入口浮点
+import RootSibling from 'react-native-root-siblings';
+
+DebugManager.showFloat(new RootSibling()) //在App内需要的地方调用些方法展示工具入口浮点
 
 ```

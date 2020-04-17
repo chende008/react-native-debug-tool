@@ -15,9 +15,6 @@
   ],
   "author": "chende",
   "license": "MIT",
-  "dependencies": {
-    "react-native-root-siblings": "3.1.7"
-  },
   "jest": {
     "preset": "react-native"
   }
