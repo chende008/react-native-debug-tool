@@ -12,7 +12,7 @@
  在项目package.json的 dependencies 节点下引入 
  
  ```jsx
- "react-native-debug-tool": "https://github.com/chende008/react-native-fast-app.git#master"
+ "react-native-debug-tool": "https://github.com/chende008/react-native-debug-tool.git#master"
  ```
 
  初始化方法：
