@@ -4,7 +4,7 @@ interface DebugManager {
 
     initDeviceInfo(deviceInfo: object): DebugManager;
 
-    appendHttpLogs(params: object, response: object, parseResult: object): void;
+    appendHttpLogs(params: object, response: object, parseResult?: object): void;
 
     appendWebViewLogs(loadUrl: string): void;
 
