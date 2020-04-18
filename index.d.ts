@@ -10,7 +10,7 @@ interface DebugManager {
 
     appendLogs(text: string): void;
 
-    showFloat(sibling: object): void;
+    showFloat(sibling?: object): void;
 }
 
 export var DebugManager: DebugManager;
