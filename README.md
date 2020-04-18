@@ -75,3 +75,5 @@ DebugManager.showFloat(new RootSibling()) //在App内需要的地方调用些方
 // 若当前项目中没有使用RootSibling相关代码，则不用传入任何参数
 
 ```
+
+详细使用方法请参考 [示例](https://github.com/chende008/react-native-fast-app-sample)
