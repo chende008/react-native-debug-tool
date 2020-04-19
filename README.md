@@ -69,10 +69,9 @@ fetch(url, params).then((response) => {
 
 import RootSibling from 'react-native-root-siblings';
 
-DebugManager.showFloat(new RootSibling()) //在App内需要的地方调用些方法展示工具入口浮点
+DebugManager.showFloat(RootSibling) //在App内需要的地方调用些方法展示工具入口浮点
 
-// 参数 RootSibling 对象非必须，若当前项目中包含些库或者某些控件有使用RootSibling则为了避免冲突，建议直接传入RootSibling实例，
-// 若当前项目中没有使用RootSibling相关代码，则不用传入任何参数
+// only support react-native-root-siblings 3.x
 
 ```
 
