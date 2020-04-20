@@ -1,6 +1,5 @@
 # react-native-debug-tool （开发调试工具）
 
-[使用手册](https://github.com/chende008/react-native-fast-app-sample)
 
 ### 安装
 
