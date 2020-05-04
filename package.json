@@ -1,6 +1,6 @@
 {
   "name": "react-native-debug-tool",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "debug-tool for react-native",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chende008/react-native-fast-app.git"
+    "url": "https://github.com/chende008/react-native-debug-tool.git"
   },
   "keywords": [
     "debug-tool"
