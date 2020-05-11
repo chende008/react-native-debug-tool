@@ -74,4 +74,4 @@ DebugManager.showFloat(RootSibling) //在App内需要的地方调用些方法展
 
 ```
 
-详细使用方法请参考 [示例](https://github.com/chende008/react-native-fast-app-sample)
+详细使用方法请参考 [示例](https://github.com/chende008/react-native-easy-app-sample)
