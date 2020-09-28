@@ -23,6 +23,9 @@ or yarn add react-native-debug-tool
   DebugManager.initDeviceInfo(DeviceInfo)
   .initServerUrlMap(serverUrlMap, currentUrl, (baseUrl) => {
   
+  })
+  .initStagingKeyMap(deployKeyMap, currentKey, (currentKey) => {
+  
   });
   
   注：初始化方法为非必需方法，如果项目不需要支持【环境切换】与【设备信息查看】功能，可以不调用此方法
